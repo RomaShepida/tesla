@@ -26,31 +26,117 @@ body {
     margin: 0 auto;
 }
 
+.title {
+    font-family: $roboto;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 112px;
+}
+
 // header
 
-.logo {
-}
+.logo {}
 
 .header {
     height: 100vh;
+    position: absolute;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.3);
+    left: 0;
+    right: 0;
 
     // .header-content
     &-content {
+
         // .header-content__title
         &__title {
+            margin-bottom: 40px;
         }
+
         // .header-content__text
         &__text {
+            width: 285px;
+            margin-bottom: 25px;
         }
+
         // .header-content__btn
         &__btn {
+            display: inline-block;
+            background-color: rgba($color: $text_white, $alpha: 0.15);
+            border: 1px solid $text_white;
+            padding: 30px 62px;
+            font-weight: 700;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: $bg_red;
+            }
         }
     }
+
     // .header__top
     &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
     }
+
     // .header__btn
     &__btn {
+        width: 60px;
+        height: 60px;
+        border: 1px $text_white solid;
+        background-color: rgba($color: $text_white, $alpha: 0.1);
+        cursor: pointer;
+
+        & div {
+            width: 36px;
+            height: 2px;
+            background-color: $text_white;
+            margin: 12.5px auto;
+        }
     }
 }
 
+.slider {
+
+    // .slider-top
+    &-top {}
+
+    // .slider__item
+    &__item {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 0;
+    }
+
+    & .slick-dots {
+        position: relative;
+        z-index: 6;
+        max-width: 1230px;
+        padding: 0 15px;
+        margin: -55px auto 0;
+
+        & li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        & button {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $bg_black;
+            border: none;
+            padding: 0;
+            font-size: 0;
+            cursor: pointer;
+            outline: none;
+        }
+
+        & .slick-active button {
+            background-color: $text_white;
+        }
+    }
+}
