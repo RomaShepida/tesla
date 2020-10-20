@@ -1,0 +1,56 @@
+// add variables (contains bg colors, text colors)
+@import "_variables.scss";
+
+// global styles
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: $text_white;
+    text-decoration: none;
+}
+
+body {
+    background-color: $bg_black;
+    color: $text_white;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: $roboto_con;
+    font-weight: 400;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+// header
+
+.logo {
+}
+
+.header {
+    height: 100vh;
+
+    // .header-content
+    &-content {
+        // .header-content__title
+        &__title {
+        }
+        // .header-content__text
+        &__text {
+        }
+        // .header-content__btn
+        &__btn {
+        }
+    }
+    // .header__top
+    &__top {
+    }
+    // .header__btn
+    &__btn {
+    }
+}
+
