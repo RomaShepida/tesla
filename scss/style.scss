@@ -291,7 +291,6 @@ body {
     // .footer-nav
     &-nav {
 
-
         & ul {
             display: flex;
             list-style-type: none;
@@ -301,6 +300,15 @@ body {
             & li {
                 margin: 0 12px;
                 position: relative;
+
+
+                & a {
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: $bg_black;
+                    }
+                }
 
                 &::after {
                     content: "|";

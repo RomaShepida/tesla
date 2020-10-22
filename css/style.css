@@ -225,6 +225,12 @@ body {
   margin: 0 12px;
   position: relative;
 }
+.footer-nav ul li a {
+  transition: all 0.3s;
+}
+.footer-nav ul li a:hover {
+  color: #0B0B0B;
+}
 .footer-nav ul li::after {
   content: "|";
   position: absolute;
