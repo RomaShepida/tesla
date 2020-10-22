@@ -53,7 +53,6 @@ body {
 }
 
 // header
-
 .header {
     height: 100vh;
     position: absolute;
@@ -101,6 +100,7 @@ body {
     }
 }
 
+// slider
 .slider {
 
     // .slider__item
@@ -127,8 +127,8 @@ body {
             width: 15px;
             height: 15px;
             border-radius: 50%;
+            border: 2px solid $text_white;
             background-color: $bg_black;
-            border: none;
             padding: 0;
             font-size: 0;
             cursor: pointer;
@@ -192,6 +192,7 @@ body {
     margin-bottom: 100px;
 }
 
+// advantages
 .advantages {
 
     // .advantages__row
@@ -290,6 +291,7 @@ body {
 
     // .footer-nav
     &-nav {
+        font-weight: 700;
 
         & ul {
             display: flex;
