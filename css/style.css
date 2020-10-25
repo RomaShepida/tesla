@@ -21,6 +21,9 @@ body {
   max-width: 1230px;
   margin: 0 auto;
 }
+.container-menu {
+  position: relative;
+}
 
 .heading_0 {
   font-family: "Roboto", sans-serif;
@@ -79,6 +82,67 @@ body {
   height: 2px;
   background-color: #FFFFFF;
   margin: 12.5px auto;
+}
+
+.menu {
+  background-color: #0B0B0B;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  transition: all 0.5s;
+  z-index: 7;
+}
+.menu.active {
+  left: 0;
+}
+.menu__list {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.menu__list ul {
+  list-style: none;
+}
+.menu__list a {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  min-width: 368px;
+  border-bottom: 3px solid #B70021;
+  padding: 30px 25px 14px 0;
+  transition: all 0.5s;
+}
+.menu__list a:hover {
+  border-bottom: 3px solid #FFFFFF;
+  color: #B70021;
+  transform: scale(1.2);
+  margin-left: 37px;
+}
+
+.close-btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 31px;
+  cursor: pointer;
+}
+.close-btn::after, .close-btn::before {
+  content: "";
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  background-color: #FFFFFF;
+  transform-origin: left;
+}
+.close-btn::after {
+  transform: rotate(45deg);
+}
+.close-btn::before {
+  transform: rotate(-45deg);
+  bottom: -1px;
 }
 
 .slider__item {
